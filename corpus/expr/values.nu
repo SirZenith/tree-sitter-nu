@@ -76,3 +76,68 @@ values-004-binary
         (hex_digit)
         (hex_digit)
         (hex_digit)))))
+
+=====
+values-005-string
+=====
+
+[this "is" 'only' `for` "\ttesting\n"]
+
+-----
+
+(nu_script
+ (pipeline
+  (pipe_element
+   (val_list
+    (val_string)
+    (val_string)
+    (val_string)
+    (val_string)
+    (val_string
+     (escape_sequence)
+     (escape_sequence))))))
+
+=====
+values-006-string-interpolation
+=====
+
+[$"(echo this)" $"\(echo this)", $"\(echo this\)"]
+
+-----
+
+(nu_script
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_interpolated
+          (expr_interpolated
+            (pipeline
+              (pipe_element
+                (command
+                  (cmd_head
+                    (cmd_identifier)
+                    (val_string)))))))
+        (val_interpolated
+          (inter_escape_sequence)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content))
+        (val_interpolated
+          (inter_escape_sequence)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (escaped_interpolated_content)
+          (inter_escape_sequence))))))
