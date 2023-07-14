@@ -726,7 +726,7 @@ module.exports = grammar({
 
         val_filesize: $ => seq(
             field("value", $.val_number),
-            field("unit", FILESIZE_UNIT()),
+            field("unit", token.immediate(FILESIZE_UNIT())),
         ),
 
         val_binary: $ => seq(
@@ -816,7 +816,7 @@ module.exports = grammar({
                     /u[0-9a-fA-F]{4}/,
                     /u{[0-9a-fA-F]+}/,
                     /x[0-9a-fA-F]{2}/,
-                    "(",
+                    "(", // TODO 
                 ),
             )
         ),
@@ -971,6 +971,13 @@ module.exports = grammar({
         )
     },
 });
+
+function case_insensitive(word) {
+    let pattern = word.split("")
+        .map(char => `[${char}${char.toUpperCase()}]`)
+        .join('');
+    return new RegExp(pattern);
+}
 
 /// nushell keywords
 function KEYWORD() {
@@ -1239,25 +1246,12 @@ function DURATION_UNIT() {
 };
 
 /// filesize units, are case insensitive
-/// taken from `nu_parser::parse_filesize_bytes()`
 function FILESIZE_UNIT() {
-    return choice(...[
-        "b", "B",
+    const units = [
+        "b", "kb", "kib", "mb", "mib", "gb", "gib",
+        "tb", "tib", "pb", "pib", "eb", "eib", "zb", "zib",
+    ]
+        .map(unit => case_insensitive(unit));
 
-        "kb", "kB", "Kb", "KB",
-        "mb", "mB", "Mb", "MB",
-        "gb", "gB", "Gb", "GB",
-        "tb", "tB", "Tb", "TB",
-        "pb", "pB", "Pb", "PB",
-        "eb", "eB", "Eb", "EB",
-        "zb", "zB", "Zb", "ZB",
-
-        "kib", "kiB", "kIB", "kIb", "Kib", "KIb", "KIB",
-        "mib", "miB", "mIB", "mIb", "Mib", "MIb", "MIB",
-        "gib", "giB", "gIB", "gIb", "Gib", "GIb", "GIB",
-        "tib", "tiB", "tIB", "tIb", "Tib", "TIb", "TIB",
-        "pib", "piB", "pIB", "pIb", "Pib", "PIb", "PIB",
-        "eib", "eiB", "eIB", "eIb", "Eib", "EIb", "EIB",
-        "zib", "ziB", "zIB", "zIb", "Zib", "ZIb", "ZIB",
-    ])
+    return choice(...units)
 }
