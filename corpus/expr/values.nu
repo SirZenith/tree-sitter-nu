@@ -76,3 +76,42 @@ values-004-binary
         (hex_digit)
         (hex_digit)
         (hex_digit)))))
+
+=====
+values-009-filesize
+=====
+
+[10kb 10kib 10MB 10KiB]
+
+-----
+
+(nu_script
+ (pipeline
+  (pipe_element
+   (val_list
+    (val_filesize
+     (val_number))
+    (val_filesize
+     (val_number))
+    (val_filesize
+     (val_number))
+    (val_filesize
+     (val_number))))))
+
+=====
+values-010-duration
+=====
+
+[1us 1hr 1Day]
+
+-----
+
+(nu_script
+ (pipeline
+  (pipe_element
+   (val_list
+    (val_duration
+     (val_number))
+    (val_duration
+     (val_number))
+    (val_string)))))
