@@ -1,5 +1,5 @@
 =====
-record-001-with-comma
+record-001-comma-sep
 =====
 
 {a: true, b:false}
@@ -18,7 +18,7 @@ record-001-with-comma
      (val_bool))))))
 
 =====
-record-002-with-white-space
+record-002-white-space-sep
 =====
 
 {a: true b:false}
@@ -37,7 +37,7 @@ record-002-with-white-space
      (val_bool))))))
 
 =====
-record-003-missing-field
+record-003-missing-key
 =====
 
 {a:trueb:false}
@@ -71,3 +71,37 @@ record-004-string-field-name
     (record_entry
      (val_string)
      (val_bool))))))
+
+=====
+record-005-extra-comma
+=====
+
+[
+    {a: true,}
+    {,a: true}
+    {a: true,,}
+    {,,a: true}
+]
+
+-----
+
+(nu_script
+ (pipeline
+  (pipe_element
+   (val_list
+    (val_record
+     (record_entry
+      (identifier)
+      (val_bool)))
+    (val_record
+     (record_entry
+      (identifier)
+      (val_bool)))
+    (val_record
+     (record_entry
+      (identifier)
+      (val_bool)))
+    (val_record
+     (record_entry
+      (identifier)
+      (val_bool)))))))

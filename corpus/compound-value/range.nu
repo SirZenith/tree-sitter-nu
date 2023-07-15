@@ -95,5 +95,7 @@ $a..$a
  (pipeline
   (pipe_element
    (val_range
-    (val_variable)
-    (val_variable)))))
+    (val_variable
+     (identifier))
+    (val_variable
+     (identifier))))))

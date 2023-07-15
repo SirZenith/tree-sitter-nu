@@ -66,4 +66,23 @@ list-004-nested
      (val_number))
     (val_string)))))
 
+=====
+list-005-extra-comma
+=====
 
+[[,1] [1,]  [1,,] [,,1]]
+
+-----
+
+(nu_script
+ (pipeline
+  (pipe_element
+   (val_list
+    (val_list
+     (val_number))
+    (val_list
+     (val_number))
+    (val_list
+     (val_number))
+    (val_list
+     (val_number))))))
