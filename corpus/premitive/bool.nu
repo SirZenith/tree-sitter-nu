@@ -7,11 +7,11 @@ bool-001-normal-boolean
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_bool)
-    (val_bool)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_bool)
+        (val_bool)))))
 
 =====
 bool-002-case-sensitive
@@ -22,8 +22,8 @@ bool-002-case-sensitive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)))))

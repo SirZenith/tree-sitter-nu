@@ -7,17 +7,17 @@ filesize-001-normal-filesize
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))))))
 
 =====
 filesize-002-case-insensitive
@@ -33,22 +33,22 @@ filesize-002-case-insensitive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))
-    (val_filesize
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))
+        (val_filesize
+          (val_number))))))

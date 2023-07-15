@@ -7,14 +7,14 @@ duration-001-normal-duration
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_duration
-     (val_number))
-    (val_duration
-     (val_number))
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_duration
+          (val_number))
+        (val_duration
+          (val_number))
+        (val_string)))))
 
 =====
 duration-002-case-sensitive
@@ -25,10 +25,10 @@ duration-002-case-sensitive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)
+        (val_string)))))

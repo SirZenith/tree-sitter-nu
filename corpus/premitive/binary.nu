@@ -11,38 +11,38 @@ binary-001-white-space-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_binary
-     (hex_digit)
-     (hex_digit))
-    (val_binary
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit))
-    (val_binary
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_binary
+          (hex_digit)
+          (hex_digit))
+        (val_binary
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit))
+        (val_binary
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit))))))
 
 =====
 binary-002-comma-sep
@@ -57,38 +57,38 @@ binary-002-comma-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_binary
-     (hex_digit)
-     (hex_digit))
-    (val_binary
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit))
-    (val_binary
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit)
-     (hex_digit))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_binary
+          (hex_digit)
+          (hex_digit))
+        (val_binary
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit))
+        (val_binary
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit)
+          (hex_digit))))))
 
 =====
 binary-003-extra-comma
@@ -99,17 +99,17 @@ binary-003-extra-comma
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_binary
-     (hex_digit))
-    (val_binary
-     (hex_digit))
-    (val_binary
-     (hex_digit))
-    (val_binary
-     (hex_digit))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_binary
+          (hex_digit))
+        (val_binary
+          (hex_digit))
+        (val_binary
+          (hex_digit))
+        (val_binary
+          (hex_digit))))))
 
 =====
 binary-004-case-sensitive
@@ -120,11 +120,9 @@ binary-004-case-sensitive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)))))
-
-
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)))))

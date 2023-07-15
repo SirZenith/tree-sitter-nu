@@ -11,12 +11,12 @@ date-001-normal-date
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_date)
-    (val_date)
-    (val_date)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_date)
+        (val_date)
+        (val_date)))))
 
 =====
 date-002-fraction-section
@@ -30,11 +30,11 @@ date-002-fraction-section
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_date)
-    (val_date)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_date)
+        (val_date)))))
 
 =====
 date-003-ill-formed
@@ -49,9 +49,9 @@ date-003-ill-formed
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)))))

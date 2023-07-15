@@ -7,12 +7,12 @@ list-001-comma-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)))))
 
 =====
 list-002-white-space-sep
@@ -23,12 +23,12 @@ list-002-white-space-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)))))
 
 =====
 list-003-mixed-sep
@@ -39,12 +39,12 @@ list-003-mixed-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)))))
 
 =====
 list-004-nested
@@ -55,16 +55,16 @@ list-004-nested
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_list)
-    (val_string)
-    (val_string)
-    (val_list
-     (val_number)
-     (val_number))
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_list)
+        (val_string)
+        (val_string)
+        (val_list
+          (val_number)
+          (val_number))
+        (val_string)))))
 
 =====
 list-005-extra-comma
@@ -75,14 +75,14 @@ list-005-extra-comma
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_list
-     (val_number))
-    (val_list
-     (val_number))
-    (val_list
-     (val_number))
-    (val_list
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_list
+          (val_number))
+        (val_list
+          (val_number))
+        (val_list
+          (val_number))
+        (val_list
+          (val_number))))))

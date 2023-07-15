@@ -7,18 +7,18 @@ table-001-white-space-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_table
-    (val_list
-     (val_string)
-     (val_string))
-    (val_list
-     (val_number)
-     (val_number))
-    (val_list
-     (val_number)
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_table
+        (val_list
+          (val_string)
+          (val_string))
+        (val_list
+          (val_number)
+          (val_number))
+        (val_list
+          (val_number)
+          (val_number))))))
 
 =====
 table-002-comma-sep
@@ -29,18 +29,18 @@ table-002-comma-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_table
-    (val_list
-     (val_string)
-     (val_string))
-    (val_list
-     (val_number)
-     (val_number))
-    (val_list
-     (val_number)
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_table
+        (val_list
+          (val_string)
+          (val_string))
+        (val_list
+          (val_number)
+          (val_number))
+        (val_list
+          (val_number)
+          (val_number))))))
 
 =====
 table-003-extra-comma
@@ -56,49 +56,49 @@ table-003-extra-comma
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_table
-     (val_list
-      (val_string)
-      (val_string))
-     (val_list
-      (val_number)
-      (val_number))
-     (val_list
-      (val_number)
-      (val_number)))
-    (val_table
-     (val_list
-      (val_string)
-      (val_string))
-     (val_list
-      (val_number)
-      (val_number))
-     (val_list
-      (val_number)
-      (val_number)))
-    (val_table
-     (val_list
-      (val_string)
-      (val_string))
-     (val_list
-      (val_number)
-      (val_number))
-     (val_list
-      (val_number)
-      (val_number)))
-    (val_table
-     (val_list
-      (val_string)
-      (val_string))
-     (val_list
-      (val_number)
-      (val_number))
-     (val_list
-      (val_number)
-      (val_number)))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_table
+          (val_list
+            (val_string)
+            (val_string))
+          (val_list
+            (val_number)
+            (val_number))
+          (val_list
+            (val_number)
+            (val_number)))
+        (val_table
+          (val_list
+            (val_string)
+            (val_string))
+          (val_list
+            (val_number)
+            (val_number))
+          (val_list
+            (val_number)
+            (val_number)))
+        (val_table
+          (val_list
+            (val_string)
+            (val_string))
+          (val_list
+            (val_number)
+            (val_number))
+          (val_list
+            (val_number)
+            (val_number)))
+        (val_table
+          (val_list
+            (val_string)
+            (val_string))
+          (val_list
+            (val_number)
+            (val_number))
+          (val_list
+            (val_number)
+            (val_number)))))))
 
 =====
 table-004-extra-header
@@ -109,15 +109,15 @@ table-004-extra-header
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_table
-    (val_list
-     (val_string)
-     (val_string))
-    (val_list
-     (val_string)
-     (val_string))
-    (val_list
-     (val_number)
-     (val_numbe))))))
+  (pipeline
+    (pipe_element
+      (val_table
+        (val_list
+          (val_string)
+          (val_string))
+        (val_list
+          (val_string)
+          (val_string))
+        (val_list
+          (val_number)
+          (val_numbe))))))

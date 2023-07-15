@@ -7,13 +7,13 @@ int-001-int
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)))))
 
 =====
 int-002-underscore-sep
@@ -24,13 +24,13 @@ int-002-underscore-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)))))
 
 =====
 int-003-binary
@@ -41,14 +41,14 @@ int-003-binary
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_string)
-    (ERROR)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_string)
+        (ERROR)))))
 
 =====
 int-004-octal
@@ -59,14 +59,14 @@ int-004-octal
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_string)
-    (ERROR)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_string)
+        (ERROR)))))
 
 =====
 int-005-hex
@@ -77,14 +77,14 @@ int-005-hex
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_string)
-    (ERROR)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_string)
+        (ERROR)))))
 
 =====
 int-006-case-sensitive
@@ -95,9 +95,9 @@ int-006-case-sensitive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)))))

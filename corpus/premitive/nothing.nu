@@ -7,9 +7,9 @@ null
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_nothing))))
+  (pipeline
+    (pipe_element
+      (val_nothing))))
 
 =====
 nothing-002-case-sensitive
@@ -20,8 +20,8 @@ nothing-002-case-sensitive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)))))

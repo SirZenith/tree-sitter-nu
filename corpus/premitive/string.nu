@@ -7,16 +7,16 @@ string-001-normal-strings
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_string)
-    (val_string)
-    (val_string)
-    (val_string)
-    (val_string
-     (escape_sequence)
-     (escape_sequence))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_string)
+        (val_string)
+        (val_string)
+        (val_string)
+        (val_string
+          (escape_sequence)
+          (escape_sequence))))))
 
 =====
 string-002-string-interpolation
@@ -72,32 +72,32 @@ values-003-interpolation-single-quoted
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_interpolated
-     (expr_interpolated
-      (pipeline
-       (pipe_element
-        (command
-         (cmd_head
-          (cmd_identifier)
-          (val_string)))))))
-    (val_interpolated
-     (unescaped_interpolated_content)
-     (expr_interpolated
-      (pipeline
-       (pipe_element
-        (command
-         (cmd_head
-          (cmd_identifier)
-          (val_string)))))))
-    (val_interpolated
-     (unescaped_interpolated_content)
-     (expr_interpolated
-      (pipeline
-       (pipe_element
-        (command
-         (cmd_head
-          (cmd_identifier)
-          (val_string)))))))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_interpolated
+          (expr_interpolated
+            (pipeline
+              (pipe_element
+                (command
+                  (cmd_head
+                    (cmd_identifier)
+                    (val_string)))))))
+        (val_interpolated
+          (unescaped_interpolated_content)
+          (expr_interpolated
+            (pipeline
+              (pipe_element
+                (command
+                  (cmd_head
+                    (cmd_identifier)
+                    (val_string)))))))
+        (val_interpolated
+          (unescaped_interpolated_content)
+          (expr_interpolated
+            (pipeline
+              (pipe_element
+                (command
+                  (cmd_head
+                    (cmd_identifier)
+                    (val_string)))))))))))

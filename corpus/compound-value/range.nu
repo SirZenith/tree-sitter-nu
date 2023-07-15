@@ -7,16 +7,16 @@ range-001-inclusive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_range
-     (val_number)
-     (val_number))
-    (val_range
-     (val_number))
-    (val_range
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_range
+          (val_number)
+          (val_number))
+        (val_range
+          (val_number))
+        (val_range
+          (val_number))))))
 
 =====
 range-002-exclusive
@@ -27,16 +27,16 @@ range-002-exclusive
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_range
-     (val_number)
-     (val_number))
-    (val_range
-     (val_number))
-    (val_range
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_range
+          (val_number)
+          (val_number))
+        (val_range
+          (val_number))
+        (val_range
+          (val_number))))))
 
 =====
 range-003-inclusive-with-equal-sign
@@ -47,16 +47,16 @@ range-003-inclusive-with-equal-sign
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_range
-     (val_number)
-     (val_number))
-    (val_range
-     (val_number))
-    (val_range
-     (val_number))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_range
+          (val_number)
+          (val_number))
+        (val_range
+          (val_number))
+        (val_range
+          (val_number))))))
 
 =====
 range-004-range-sub-expression
@@ -67,21 +67,21 @@ range-004-range-sub-expression
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_range
-    (expr_parenthesized
-     (pipeline
-      (pipe_element
-       (command
-        (cmd_head
-         (cmd_identifier))))))
-    (expr_parenthesized
-     (pipeline
-      (pipe_element
-       (command
-        (cmd_head
-         (cmd_identifier))))))))))
+  (pipeline
+    (pipe_element
+      (val_range
+        (expr_parenthesized
+          (pipeline
+            (pipe_element
+              (command
+                (cmd_head
+                  (cmd_identifier))))))
+        (expr_parenthesized
+          (pipeline
+            (pipe_element
+              (command
+                (cmd_head
+                  (cmd_identifier))))))))))
 
 =====
 range-005-variable
@@ -92,10 +92,10 @@ $a..$a
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_range
-    (val_variable
-     (identifier))
-    (val_variable
-     (identifier))))))
+  (pipeline
+    (pipe_element
+      (val_range
+        (val_variable
+          (identifier))
+        (val_variable
+          (identifier))))))

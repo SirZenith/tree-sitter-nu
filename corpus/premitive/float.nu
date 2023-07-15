@@ -7,14 +7,14 @@ float-001-float
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)))))
 
 =====
 float-002-scientific-notation
@@ -25,13 +25,13 @@ float-002-scientific-notation
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_number)
-    (val_string)))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_number)
+        (val_string)))))

@@ -7,15 +7,15 @@ record-001-comma-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_record
-    (record_entry
-     (identifier)
-     (val_bool))
-    (record_entry
-     (identifier)
-     (val_bool))))))
+  (pipeline
+    (pipe_element
+      (val_record
+        (record_entry
+          (identifier)
+          (val_bool))
+        (record_entry
+          (identifier)
+          (val_bool))))))
 
 =====
 record-002-white-space-sep
@@ -26,15 +26,15 @@ record-002-white-space-sep
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_record
-    (record_entry
-     (identifier)
-     (val_bool))
-    (record_entry
-     (identifier)
-     (val_bool))))))
+  (pipeline
+    (pipe_element
+      (val_record
+        (record_entry
+          (identifier)
+          (val_bool))
+        (record_entry
+          (identifier)
+          (val_bool))))))
 
 =====
 record-003-missing-key
@@ -45,16 +45,16 @@ record-003-missing-key
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_record
-    (record_entry
-     (identifier)
-     (val_string))
-    (record_entry
-     (val_string
-      (MISSING _str_single_quotes))
-     (val_bool))))))
+  (pipeline
+    (pipe_element
+      (val_record
+        (record_entry
+          (identifier)
+          (val_string))
+        (record_entry
+          (val_string
+            (MISSING _str_single_quotes))
+          (val_bool))))))
 
 =====
 record-004-string-field-name
@@ -65,12 +65,12 @@ record-004-string-field-name
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_record
-    (record_entry
-     (val_string)
-     (val_bool))))))
+  (pipeline
+    (pipe_element
+      (val_record
+        (record_entry
+          (val_string)
+          (val_bool))))))
 
 =====
 record-005-extra-comma
@@ -86,22 +86,22 @@ record-005-extra-comma
 -----
 
 (nu_script
- (pipeline
-  (pipe_element
-   (val_list
-    (val_record
-     (record_entry
-      (identifier)
-      (val_bool)))
-    (val_record
-     (record_entry
-      (identifier)
-      (val_bool)))
-    (val_record
-     (record_entry
-      (identifier)
-      (val_bool)))
-    (val_record
-     (record_entry
-      (identifier)
-      (val_bool)))))))
+  (pipeline
+    (pipe_element
+      (val_list
+        (val_record
+          (record_entry
+            (identifier)
+            (val_bool)))
+        (val_record
+          (record_entry
+            (identifier)
+            (val_bool)))
+        (val_record
+          (record_entry
+            (identifier)
+            (val_bool)))
+        (val_record
+          (record_entry
+            (identifier)
+            (val_bool)))))))
