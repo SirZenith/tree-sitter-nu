@@ -16,10 +16,9 @@ closure-001-normal-closure
         (pipeline
           (pipe_element
             (command
-              (cmd_head
-                (cmd_identifier)
-                (val_variable
-                  (identifier))))))))))
+              (cmd_identifier)
+              (val_variable
+                (identifier)))))))))
 
 =====
 closure-002-multiple-param
@@ -41,10 +40,9 @@ closure-002-multiple-param
         (pipeline
           (pipe_element
             (command
-              (cmd_head
-                (cmd_identifier)
-                (val_variable
-                  (identifier))))))))))
+              (cmd_identifier)
+              (val_variable
+                (identifier)))))))))
 
 =====
 closure-003-empty-body
@@ -80,10 +78,9 @@ closure-004-param-annotation
         (pipeline
           (pipe_element
             (command
-              (cmd_head
-                (cmd_identifier)
-                (val_variable
-                  (identifier))))))))))
+              (cmd_identifier)
+              (val_variable
+                (identifier)))))))))
 
 =====
 closure-005-no-param
@@ -100,7 +97,6 @@ closure-005-no-param
         (pipeline
           (pipe_element
             (command
-              (cmd_head
-                (cmd_identifier)
-                (val_variable
-                  (identifier))))))))))
+              (cmd_identifier)
+              (val_variable
+                (identifier)))))))))

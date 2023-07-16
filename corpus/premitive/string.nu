@@ -35,9 +35,8 @@ string-002-string-interpolation
             (pipeline
               (pipe_element
                 (command
-                  (cmd_head
-                    (cmd_identifier)
-                    (val_string)))))))
+                  (cmd_identifier)
+                  (val_string))))))
         (val_interpolated
           (inter_escape_sequence)
           (escaped_interpolated_content)
@@ -80,24 +79,21 @@ values-003-interpolation-single-quoted
             (pipeline
               (pipe_element
                 (command
-                  (cmd_head
-                    (cmd_identifier)
-                    (val_string)))))))
+                  (cmd_identifier)
+                  (val_string))))))
         (val_interpolated
           (unescaped_interpolated_content)
           (expr_interpolated
             (pipeline
               (pipe_element
                 (command
-                  (cmd_head
-                    (cmd_identifier)
-                    (val_string)))))))
+                  (cmd_identifier)
+                  (val_string))))))
         (val_interpolated
           (unescaped_interpolated_content)
           (expr_interpolated
             (pipeline
               (pipe_element
                 (command
-                  (cmd_head
-                    (cmd_identifier)
-                    (val_string)))))))))))
+                  (cmd_identifier)
+                  (val_string))))))))))
