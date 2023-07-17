@@ -59,7 +59,20 @@ closure-003-empty-body
         (parameter_pipes)))))
 
 =====
-closure-004-param-annotation
+closure-004-this-aint-no-closure
+=====
+
+{}
+
+-----
+
+(nu_script
+  (pipeline
+    (pipe_element
+      (val_record))))
+
+=====
+closure-005-param-annotation
 =====
 
 {|x: string| print $x}
@@ -83,7 +96,7 @@ closure-004-param-annotation
                 (identifier)))))))))
 
 =====
-closure-005-no-param
+closure-006-no-param
 =====
 
 { print $in }
@@ -94,6 +107,39 @@ closure-005-no-param
   (pipeline
     (pipe_element
       (val_closure
+        (pipeline
+          (pipe_element
+            (command
+              (cmd_identifier)
+              (val_variable
+                (identifier)))))))))
+
+=====
+closure-007-multi-line-body
+=====
+
+{|name|
+    let msg = "hello " + $name
+    print $name
+}
+
+-----
+
+(nu_script
+  (pipeline
+    (pipe_element
+      (val_closure
+        (parameter_pipes
+          (parameter
+            (identifier)))
+        (stmt_let
+          (identifier)
+          (pipeline
+            (pipe_element
+              (expr_binary
+                (val_string)
+                (val_variable
+                  (identifier))))))
         (pipeline
           (pipe_element
             (command
